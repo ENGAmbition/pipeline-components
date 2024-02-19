@@ -12,7 +12,7 @@ const Button: FC<HTMLButtonProps> = (props): JSX.Element => (
   <button
     {...props}
     className={cn(
-      "w-[134px] h-[48px] px-[24px] py-[14px] bg-white rounded-[12px] border-[1px] border-spruce-light text-16px text-spruce-default",
+      "w-32 h-12 px-6 py-3 bg-white rounded-lg border border-spruce-light text-spruce-default text-base font-semibold",
       props.className
     )}
   >
