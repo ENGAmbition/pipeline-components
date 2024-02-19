@@ -2,7 +2,7 @@
   "name": "pipeline-components",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Simpson-Computer-Technologies-Research/pipeline-components"
+    "url": "git+https://github.com/ENGAmbition/pipeline-components"
   },
   "private": false,
   "version": "0.0.100",
