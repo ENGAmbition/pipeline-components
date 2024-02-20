@@ -9,9 +9,14 @@ export default {
     extend: {
       colors: {
         primary: "#ffffff",
+        spruce: {
+          light: "#C3D8DE",
+          default: "#4E7B8C",
+        },
       },
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
+        jakarta: ["Plus Jakarta Sans"],
       },
     },
   },

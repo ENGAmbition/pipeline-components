@@ -15,7 +15,7 @@ const Button: FC<HTMLButtonProps> = (props): JSX.Element => (
   <button
     {...props}
     className={cn(
-      "px-10 py-3 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50",
+      "w-34 h-12 px-6 py-3 bg-white rounded-lg border border-spruce-light text-spruce-default text-base font-jakarta font-md",
       props.className
     )}
   >
