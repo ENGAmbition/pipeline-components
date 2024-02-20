@@ -1,4 +1,4 @@
 /**
- * Export the Button Component
+ * Export the component
  */
 export { default } from "./Button";

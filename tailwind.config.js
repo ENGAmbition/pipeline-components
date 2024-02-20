@@ -11,14 +11,13 @@ export default {
         primary: "#ffffff",
         spruce: {
           light: "#C3D8DE",
-          default: "#4E7B8C"
-
-        }
+          default: "#4E7B8C",
+        },
       },
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
-        buttonFont: ["Plus Jakarta Sans"]
-      }
+        jakarta: ["Plus Jakarta Sans"],
+      },
     },
   },
   plugins: [],
