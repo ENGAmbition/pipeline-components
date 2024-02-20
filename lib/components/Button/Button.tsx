@@ -1,12 +1,15 @@
 import { cn } from "../../utils/cn";
 import { JSX, FC } from "react";
 import { HTMLButtonProps } from "./Button.types";
-// import { ButtonBase, ButtonProps } from "@mui/material";
 
 /**
  * Button Component
  *
+ * @param {HTMLButtonProps} props - Component props
  * @returns JSX.Element
+ *
+ * @example
+ * <Button>Click me</Button>
  */
 const Button: FC<HTMLButtonProps> = (props): JSX.Element => (
   <button
