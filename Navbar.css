@@ -1,0 +1,74 @@
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 2px 7%;
+}
+
+.logo{
+    width: 170px;
+    cursor: pointer;
+}
+
+ul{
+    flex: 1;
+    list-style: none;
+    text-align: left;
+    padding-left: 25px;
+}
+
+ul li{
+    display: inline-block;
+    margin: 10px 20px;
+    font-size: 15px;
+    color: #4E7B8C;
+    cursor: pointer;
+
+}
+ul li:hover {
+    color: #52CEE7;
+}
+
+.signin{
+    background-color: white;
+    border: 1px solid #C3D8DE; /* Set border to one solid color */
+    color: #4E7B8C;
+    height: 36px;
+    width: 68px;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-left: 380px;
+
+}
+.signin:hover{
+    background-color:#4E7B8C;
+    color: white;
+}
+.signin:active{
+    background-color: #313F48; 
+}
+
+.getStarted {
+    background-color: rgb(55, 156, 187);
+    border: none;
+    color: #131A1E;
+    border-radius: 7px;
+    height: 36px;
+    width: 110px;
+    margin-left: 10px;
+    background-size: 200%;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #52CEE7, #4C93F6);
+    cursor: pointer;
+}
+
+.getStarted:hover {
+    background-color: #52CEE7;
+}
+
+.getStarted:active {
+    background-color: #4C93F6;
+}
