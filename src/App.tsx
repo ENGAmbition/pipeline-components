@@ -10,6 +10,8 @@ export default function Home() {
       <Button as="link" href="/test">
         Learn More (Link)
       </Button>
+
+      <Button variant="outlined">Learn More</Button>
       <Navbar />
     </main>
   );

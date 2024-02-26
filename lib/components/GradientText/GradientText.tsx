@@ -21,7 +21,7 @@ const GradientText: FC<HTMLGradientTextProps> = (props): JSX.Element => (
       `from-${props.from}`,
       `to-${props.to}`,
       `bg-gradient-${props.direction}`,
-      props.className
+      props.className,
     )}
   >
     {props.children}

@@ -15,15 +15,15 @@ import Button from "../Button";
  */
 const Navbar: FC<HTMLNavbarProps> = (props): JSX.Element => {
   const NavbarButton: FC<HTMLParaProps> = (props): JSX.Element => (
-    <div className="relative group flex flex-col justify-center items-center py-2 px-6">
+    <div className="group relative flex flex-col items-center justify-center px-6 py-2">
       <p
         {...props}
-        className="text-lg text-center text-spruce-default z-10 cursor-pointer group-hover:text-blue-500"
+        className="z-10 cursor-pointer text-center text-lg text-spruce-default group-hover:text-blue-500"
       >
         {props.children}
       </p>
 
-      <span className="h-full bg-gray-100 absolute z-0 w-0 group-hover:w-full duration-300 ease-in-out rounded-lg"></span>
+      <span className="absolute z-0 h-full w-0 rounded-lg bg-gray-100 duration-300 ease-in-out group-hover:w-full"></span>
     </div>
   );
 
@@ -31,11 +31,11 @@ const Navbar: FC<HTMLNavbarProps> = (props): JSX.Element => {
     <nav
       {...props}
       className={cn(
-        "fixed w-screen top-0 left-0 flex z-50 flex-row items-center justify-between bg-white p-2 md:p-4",
-        props.className
+        "fixed left-0 top-0 z-50 flex w-screen flex-row items-center justify-between bg-white p-2 md:p-4",
+        props.className,
       )}
     >
-      <div className="flex flex-row items-center justify-start pl-4 md:pl-0 gap-4">
+      <div className="flex flex-row items-center justify-start gap-4 pl-4 md:pl-0">
         <PipelineLogoLong className="-my-10" />
 
         <NavbarButton>Home</NavbarButton>
