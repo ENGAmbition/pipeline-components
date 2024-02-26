@@ -15,20 +15,23 @@ const Button: FC<ButtonProps> = (props): JSX.Element => {
   /**
    * Remove the variant prop from the props object
    */
-  const { variant, ...rest } = props;
+  const { variant, as, ...rest } = props;
 
   /**
    * Return the button with the outline
    */
   if (variant === "outlined") {
-    return (
-      <button
-        {...rest}
-        className={cn(
-          "w-34 h-12 px-6 py-3 bg-transparent rounded-lg border border-spruce-light text-spruce-default text-base font-jakarta font-md hover:bg-spruce-light/50 duration-300 ease-in-out",
-          props.className
-        )}
-      >
+    const className = cn(
+      "w-34 font-md h-12 rounded-lg border border-spruce-light bg-transparent px-6 py-3 font-jakarta text-base text-spruce-default duration-300 ease-in-out hover:bg-spruce-light/50 disabled:opacity-50",
+      props.className,
+    );
+
+    return as === "link" ? (
+      <a {...rest} className={className}>
+        {props.children}
+      </a>
+    ) : (
+      <button {...rest} className={className}>
         {props.children}
       </button>
     );
@@ -37,14 +40,16 @@ const Button: FC<ButtonProps> = (props): JSX.Element => {
   /**
    * Return the button with the blue gradient
    */
-  return (
-    <button
-      {...rest}
-      className={cn(
-        "w-34 h-12 px-6 py-3 bg-gradient-to-r from-sky-400 to-blue-500 rounded-lg text-white text-base font-jakarta font-md hover:from-sky-500 hover:to-blue-600 duration-300 ease-in-out",
-        props.className
-      )}
-    >
+  const className = cn(
+    "w-34 font-md h-12 rounded-lg bg-gradient-to-r from-sky-400 to-blue-500 px-6 py-3 font-jakarta text-base text-white duration-300 ease-in-out hover:from-sky-500 hover:to-blue-600 disabled:opacity-50",
+    props.className,
+  );
+  return as === "link" ? (
+    <a {...rest} className={className}>
+      {props.children}
+    </a>
+  ) : (
+    <button {...rest} className={className}>
       {props.children}
     </button>
   );
