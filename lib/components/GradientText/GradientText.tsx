@@ -1,26 +1,20 @@
 import { cn } from "../../utils/cn";
 import { JSX, FC } from "react";
-import { HTMLGradientTextProps } from "./GradientText.types";
+import { HTMLParaProps } from "./GradientText.types";
 
 /**
  * GradientText Component
  *
- * @param {HTMLGradientTextProps} props - Component props
+ * @param {HTMLParaProps} props
  * @returns JSX.Element
  *
  * @example
  *
- * // Gradient from red to blue to the right
- * <GradientText from="red" to="blue" direction="to-r">
+ * <GradientText>
+ *  Content
+ * </GradientText>
  */
-const GradientText: FC<HTMLGradientTextProps> = (props): JSX.Element => {
-  /**
-   * Default props
-   */
-  if (!props.from) props.from = "sky-500";
-  if (!props.to) props.to = "blue-500";
-  if (!props.direction) props.direction = "to-r";
-
+const GradientText: FC<HTMLParaProps> = (props): JSX.Element => {
   /**
    * Return the component
    */
@@ -28,10 +22,7 @@ const GradientText: FC<HTMLGradientTextProps> = (props): JSX.Element => {
     <span
       {...props}
       className={cn(
-        "bg-transparent bg-clip-text text-transparent",
-        `from-${props.from}`,
-        `to-${props.to}`,
-        `bg-gradient-${props.direction}`,
+        "bg-transparent bg-gradient-to-r from-blue-500 to-sky-400 bg-clip-text text-transparent",
         props.className,
       )}
     >
