@@ -1,6 +1,6 @@
 "use client";
 
-import { Button, Navbar } from "../lib/components";
+import { Button, GradientText, Navbar } from "../lib/components";
 import "./index.css";
 
 export default function Home() {
@@ -13,6 +13,8 @@ export default function Home() {
 
       <Button variant="outlined">Learn More</Button>
       <Navbar />
+
+      <GradientText>Gradient Text</GradientText>
     </main>
   );
 }
