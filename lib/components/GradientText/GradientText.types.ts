@@ -8,7 +8,7 @@ export type HTMLParaProps = DetailedHTMLProps<
   HTMLParagraphElement
 >;
 
-export type Direction =
+export type GradientDirection =
   | "to-t" // To top
   | "to-tr" // To top right
   | "to-r" // To right
@@ -19,7 +19,7 @@ export type Direction =
   | "to-tl"; // To top left
 
 export type HTMLGradientTextProps = HTMLParaProps & {
-  from: string;
-  to: string;
-  direction: Direction;
+  from: string | undefined;
+  to: string | undefined;
+  direction: GradientDirection | undefined;
 };
