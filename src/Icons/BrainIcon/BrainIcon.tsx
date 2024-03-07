@@ -1,6 +1,6 @@
 import { JSX, FC } from "react";
 import { HTMLSVGProps } from "./BrainIcon.types";
-import { cn } from "../../../utils/cn";
+import { cn } from "../../../lib/utils/cn";
 
 /**
  * Brain Icon Component

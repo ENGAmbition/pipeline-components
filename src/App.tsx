@@ -1,15 +1,12 @@
-// App.tsx
-
-import Card from "./Card/card";
+import Card from "./Card/Card";
 import "./index.css";
-import iconImage1 from './Assets/peer-help.png';
-import iconImage2 from './Assets/brainicon.png';
-import iconImage3 from './Assets/dna-icon.png';
+import iconImage1 from './Icons/BrainIcon/brainicon.png';
+import iconImage2 from './Icons/DNAIcon/dna-icon.png';
+import iconImage3 from './Icons/PeerHelpIcon/peer-help.png';
 
 export default function Home() {
   return (
-    <main className="flex flex-col justify-center items-center min-h-screen w-screen">
-      <div className="card-container">
+      <div>
         <Card
           title="Pipeline to Clinical Experience"
           content="We link students with volunteer roles at Guelph's healthcare clinics, offering training in basic clinical tasks and insights into clinic operations."
@@ -28,6 +25,5 @@ export default function Home() {
           icon={iconImage3}
         />
       </div>
-    </main>
   );
 }
