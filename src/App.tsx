@@ -1,12 +1,14 @@
-import Card from "./Card/Card";
+import Card from "../lib/components/Card/Card";
 import "./index.css";
-import iconImage1 from './Icons/BrainIcon/brainicon.png';
-import iconImage2 from './Icons/DNAIcon/dna-icon.png';
-import iconImage3 from './Icons/PeerHelpIcon/peer-help.png';
+
+import iconImage1 from '../lib/components/Icons/BrainIcon/brainicon.svg';
+import iconImage2 from '../lib/components/Icons/DNAIcon/dna-icon-2.svg';
+import iconImage3 from '../lib/components/Icons/PeerHelpIcon/peer-help.svg';
 
 export default function Home() {
   return (
-      <div>
+    <div className="flex justify-center"> 
+      <div className="grid grid-cols-3">
         <Card
           title="Pipeline to Clinical Experience"
           content="We link students with volunteer roles at Guelph's healthcare clinics, offering training in basic clinical tasks and insights into clinic operations."
@@ -25,5 +27,6 @@ export default function Home() {
           icon={iconImage3}
         />
       </div>
+    </div>
   );
 }

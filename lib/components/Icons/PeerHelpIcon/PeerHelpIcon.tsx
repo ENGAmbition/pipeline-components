@@ -1,17 +1,17 @@
 import { JSX, FC } from "react";
-import { HTMLSVGProps } from "./DNAIcon.types";
-import { cn } from "../../../lib/utils/cn";
+import { HTMLSVGProps } from "./PeerHelpIcon.types";
+import { cn } from "../../../utils/cn";
 
 /**
- * DNA Icon Component
+ * Peer Help Icon Component
  *
  * @param {HTMLSVGProps} props - Component props
  * @returns JSX.Element
  *
  * @example
- * <DNAIcon />
+ * <PeerHelpIcon />
  */
-const DNAIcon: FC<HTMLSVGProps> = (props): JSX.Element => (
+const PeerHelpIcon: FC<HTMLSVGProps> = (props): JSX.Element => (
   <svg
     className={cn("", props.className)}
     xmlns="http://www.w3.org/2000/svg"
@@ -24,4 +24,4 @@ const DNAIcon: FC<HTMLSVGProps> = (props): JSX.Element => (
 /**
  * Export the component by default
  */
-export default DNAIcon;
+export default PeerHelpIcon;
