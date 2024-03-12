@@ -3,7 +3,6 @@
 import { Navbar } from "../lib/components";
 import Card from "../lib/components/Card";
 import { BrainIcon, DNAIcon, PeerHelpIcon } from "../lib/components/Icons";
-import "./index.css";
 
 export default function Home() {
   return (
